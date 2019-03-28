@@ -54,36 +54,36 @@ else
     exit 1;
 fi
 
-if [[ $(locale -a | grep ^en_US.UTF-8) ]] || [[ $(locale -a | grep ^en_US.utf8) ]]; then
-    if ! $(grep -E "(en_US.UTF-8)" "$HOME/.bashrc"); then
+if [[ $(locale -a | grep ^fr_FR.UTF-8) ]] || [[ $(locale -a | grep ^fr_FR.utf8) ]]; then
+    if ! $(grep -E "(fr_FR.UTF-8)" "$HOME/.bashrc"); then
         # Setting the bashrc locale
-        echo "export LC_ALL=en_US.UTF-8" >> "$HOME/.bashrc"
-        echo "export LANG=en_US.UTF-8" >> "$HOME/.bashrc"
-        echo "export LANGUAGE=en_US.UTF-8" >> "$HOME/.bashrc"
+        echo "export LC_ALL=fr_FR.UTF-8" >> "$HOME/.bashrc"
+        echo "export LANG=fr_FR.UTF-8" >> "$HOME/.bashrc"
+        echo "export LANGUAGE=fr_FR.UTF-8" >> "$HOME/.bashrc"
 
         # Setting the current shell locale
-        export LC_ALL="en_US.UTF-8"
-        export LANG="en_US.UTF-8"
-        export LANGUAGE="en_US.UTF-8"
+        export LC_ALL="fr_FR.UTF-8"
+        export LANG="fr_FR.UTF-8"
+        export LANGUAGE="fr_FR.UTF-8"
     fi
 else
-    # Install en_US.UTF-8 Locale
+    # Install fr_FR.UTF-8 Locale
     if [[ ! -z $DEB ]]; then
-        sudo locale-gen en_US.UTF-8
-        sudo update-locale LANG=en_US.UTF-8
+        sudo locale-gen fr_FR.UTF-8
+        sudo update-locale LANG=fr_FR.UTF-8
     elif [[ ! -z $RPM ]]; then
-        sudo localedef -c -i en_US -f UTF-8 en_US.UTF-8
+        sudo localedef -c -i fr_FR -f UTF-8 fr_FR.UTF-8
     fi
 
     # Setting the current shell locale
-    export LC_ALL="en_US.UTF-8"
-    export LANG="en_US.UTF-8"
-    export LANGUAGE="en_US.UTF-8"
+    export LC_ALL="fr_FR.UTF-8"
+    export LANG="fr_FR.UTF-8"
+    export LANGUAGE="fr_FR.UTF-8"
 
     # Setting the bashrc locale
-    echo "export LC_ALL=en_US.UTF-8" >> "$HOME/.bashrc"
-    echo "export LANG=en_US.UTF-8" >> "$HOME/.bashrc"
-    echo "export LANGUAGE=en_US.UTF-8" >> "$HOME/.bashrc"
+    echo "export LC_ALL=fr_FR.UTF-8" >> "$HOME/.bashrc"
+    echo "export LANG=fr_FR.UTF-8" >> "$HOME/.bashrc"
+    echo "export LANGUAGE=fr_FR.UTF-8" >> "$HOME/.bashrc"
 fi
 
 heading "Installing system dependencies..."

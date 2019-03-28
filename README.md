@@ -1,4 +1,4 @@
-# Ark Core
+# OCKHAM Core
 
 <p align="center">
     <img src="./banner.png" />
@@ -14,17 +14,17 @@ This repository contains all plugins that make up the Ark Core.
 
 ## Documentation
 
--   Development : https://docs.ark.io/guidebook/core/development.html
--   Docker : https://docs.ark.io/guidebook/core/docker.html
+-   Development : https://docs.ockham.consulting/guidebook/core/development.html
+-   Docker : https://docs.ockham.consulting/guidebook/core/docker.html
 
 ## API Documentation
 
--   API v1 : https://docs.ark.io/api/public/v1/
--   API v2 : https://docs.ark.io/api/public/v2/
+-   API v1 : https://docs.ockham.consulting/api/public/v1/
+-   API v2 : https://docs.ockham.consulting/api/public/v2/
 
 ## GitHub Development Bounty
 
--   Get involved with Ark development and start earning ARK : https://bounty.ark.io
+-   Get involved with Ark development and start earning ARK : https://bounty.ockham.consulting
 
 ## Core Packages
 
@@ -61,7 +61,7 @@ This repository contains all plugins that make up the Ark Core.
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@ockham.consulting. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
@@ -72,7 +72,8 @@ If you discover a security vulnerability within this package, please send an e-m
 -   [Joshua Noack](https://github.com/supaiku0)
 -   [Kristjan Košič](https://github.com/kristjank)
 -   [Vasil Dimov](https://github.com/vasild)
+-   [Luc Talarico](https://github.com/gitockham)
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [OCKHAM CONSULTING INSTITUE](https://ockham.consulting)
